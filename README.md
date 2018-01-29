@@ -17,12 +17,16 @@ The NLU understands a limited number of sentences of the above types for the fol
 
 ## Usage
 
-# encoding: utf-8
+\# encoding: utf-8
+
 from nlu import NLU
 
 user_query = "Smartphones mit Fingerabdrucksensor"
+
 logfile = 'logs.txt'
+
 nlu = NLU(logfile)
+
 r = nlu.parse(user_query)
 
 ## Recognition result
@@ -84,7 +88,7 @@ The attribute_value_specification entity is a composite entity which can describ
     "literal": "n.a."
 }
 
-# Code structure and intentions
+# Code structure
 
 Python files starting with 'gr_' contain (sub)grammars for device names, attribute names and values (incl. attribute_value_specification) and the main grammar.
 
